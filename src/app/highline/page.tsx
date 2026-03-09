@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import {
   Shield,
   ShieldCheck,
@@ -253,11 +254,8 @@ function Nav() {
         }`}
         style={{ boxShadow: `inset 0 0 0 1px rgba(255,255,255,${scrolled ? 0.08 : 0.04})` }}
       >
-        <a href="/" className="flex items-center gap-2">
-          <Shield className="h-5 w-5 text-primary" strokeWidth={1.5} />
-          <span className="text-[15px] font-semibold tracking-tight">
-            GenZ<span className="text-primary">Protect</span>
-          </span>
+        <a href="/" className="flex items-center">
+          <Image src="/logo-protect.svg" alt="GenZ Protect" width={160} height={36} className="h-7 w-auto" priority />
         </a>
 
         <nav className="hidden md:flex items-center gap-1">
@@ -1022,12 +1020,7 @@ function Footer() {
     <footer className="border-t border-border py-8">
       <div className="mx-auto max-w-6xl px-5">
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
-          <div className="flex items-center gap-2">
-            <Shield className="h-4 w-4 text-primary" strokeWidth={1.5} />
-            <span className="text-sm font-semibold">
-              GenZ<span className="text-primary">Protect</span>
-            </span>
-          </div>
+          <Image src="/logo.svg" alt="GenZ" width={120} height={36} className="h-6 w-auto" />
           <p className="text-[13px] text-muted">
             Confidential — Prepared exclusively for Highline
           </p>

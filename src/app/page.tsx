@@ -1,11 +1,9 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
-import Image from "next/image";
 import {
   Phone,
   Mail,
-  Shield,
   ShieldCheck,
   TrendingUp,
   Zap,
@@ -23,6 +21,9 @@ import {
   CheckCircle2,
   Star,
 } from "lucide-react";
+
+const LOGO_URL =
+  "https://kuqvupztguryktcfaiwu.supabase.co/storage/v1/object/public/Images/GenZ-logo-w.png";
 
 /* ─── Scroll Reveal Hook ─── */
 function useReveal() {
@@ -95,7 +96,7 @@ function Header() {
         }}
       >
         <a href="#" className="flex items-center">
-          <Image src="/logo-protect.svg" alt="GenZ Protect" width={160} height={36} className="h-7 w-auto" priority />
+          <img src={LOGO_URL} alt="GenZ Protect" className="h-7 w-auto" />
         </a>
 
         <nav className="hidden md:flex items-center gap-1">
@@ -801,7 +802,7 @@ function Footer() {
     <footer className="border-t border-border py-8">
       <div className="mx-auto max-w-6xl px-5">
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
-          <Image src="/logo.svg" alt="GenZ" width={120} height={36} className="h-6 w-auto" />
+          <img src={LOGO_URL} alt="GenZ" className="h-6 w-auto" />
 
           <p className="text-[13px] text-muted">
             &copy; 2026 GenZ Automotive

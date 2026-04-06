@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 
 const LOGO_URL =
-  "https://kuqvupztguryktcfaiwu.supabase.co/storage/v1/object/public/Images/GenZ-logo-w.png";
+  "https://xepoqvwvwgglwyjelqsw.supabase.co/storage/v1/object/public/Images/GenZ-logo-w-blue.png";
 
 /* Brand colors extracted from logo */
 const BRAND = {
